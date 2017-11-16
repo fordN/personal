@@ -1,0 +1,11 @@
+.svgtile {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.animatedest {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+}

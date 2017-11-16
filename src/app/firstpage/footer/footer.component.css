@@ -1,0 +1,14 @@
+.container {
+	/*background-color: #d2d5d4;*/
+	/*background-color: #f08080;*/
+	background-color: black;
+	width: 100%;
+	height: auto;
+	/*padding-bottom: 2%;*/
+	padding-top: 2%;
+}
+
+p {
+	font-size: .7em;
+	color: #f08080;
+}

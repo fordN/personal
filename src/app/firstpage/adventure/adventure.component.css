@@ -1,0 +1,28 @@
+.container {
+	background-color: #ffffff;
+	width: 100%;
+	height: auto;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.sectiontitle {
+	width: 100%;
+	height: auto;
+}
+
+.tilerow {
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 24px;
+}
+
+.imgcontainer {
+/*	margin:5px;*/
+	/*background-color: pink;*/
+}

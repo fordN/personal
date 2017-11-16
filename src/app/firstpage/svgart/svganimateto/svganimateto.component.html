@@ -1,0 +1,14 @@
+<div *ngIf="sanitizer.bypassSecurityTrustResourceUrl(artdata.name)">
+
+	<embed class="svgtile" (mouseover)="startSketch(artdata)" (mouseout)="reverseSketch(artdata)" [name]="createId(artdata.id, 'init')" [src]="sanitizer.bypassSecurityTrustResourceUrl(artdata.name)" />		
+
+	<embed class="animatedest" *ngIf="isAnimateTo(artdata)" [name]="createId(artdata.id, 'dest')" [src]="sanitizer.bypassSecurityTrustResourceUrl(artdata.animateTo)" />
+	
+</div>
+
+
+
+
+
+<!-- <embed class="svgtile" [src]="sanitizer.bypassSecurityTrustResourceUrl(artdata.name)">		
+	<embed *ngIf="isAnimateTo(artdata)" class="animatedest" [src]="sanitizer.bypassSecurityTrustResourceUrl(artdata.animateTo)"> -->

@@ -1,0 +1,39 @@
+.container {
+	/*background-color: #d2d5d4;*/
+	background-color: #c6c5c5;
+	/*background-color: #f08080;*/
+	width: 100%;
+	height: auto;
+	padding-bottom: 2%;
+	padding-top: 2%;
+}
+.title {
+	width: 100%;
+	height: auto;
+	color: #000000;
+}
+.tilerow {
+	/*position: absolute;
+	bottom: 0;
+	left: 0;*/
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 0px;
+	max-height: 45vh;
+	height: auto;
+	width: 100%;
+}
+.svgcontainer {
+	height: auto;
+	width: 100%;
+	min-height: 40%;
+	margin-bottom:3%	
+}
+
+.card{
+	padding:12px;
+	background-color: #000000;
+	opacity: .62;
+	color: #ffffff;
+	margin-bottom: 5%;
+}

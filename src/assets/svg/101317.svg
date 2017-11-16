@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1, .cls-13 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #b8b5b5;
+        opacity: 0.66;
+      }
+
+      .cls-3 {
+        fill: #ff8b45;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: #002b8b;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-6, .cls-8, .cls-9 {
+        opacity: 0.36;
+      }
+
+      .cls-7 {
+        fill: #ff9173;
+      }
+
+      .cls-8 {
+        fill: #01d000;
+      }
+
+      .cls-9 {
+        fill: #6f45ff;
+      }
+
+      .cls-10 {
+        fill: #00e7e4;
+      }
+
+      .cls-11 {
+        fill: #a20000;
+      }
+
+      .cls-12 {
+        fill: #edff17;
+      }
+
+      .cls-13 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+
+      .cls-14 {
+        fill: #fff600;
+      }
+
+      .cls-15 {
+        fill: #520073;
+      }
+
+      .cls-16 {
+        fill: #ff9600;
+      }
+
+      .cls-17 {
+        fill: #2ef8ff;
+      }
+
+      .cls-18 {
+        fill: #b90018;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <title>101317</title>
+  <g id="background">
+    <rect class="cls-2" width="1024" height="1024"/>
+  </g>
+  <g id="backcircs">
+    <circle class="cls-3" cx="711" cy="335" r="33"/>
+    <g class="cls-4">
+      <circle class="cls-5" cx="915.5" cy="125.5" r="242.5"/>
+    </g>
+  </g>
+  <g id="rects">
+    <g class="cls-6">
+      <rect class="cls-7" y="853.33" width="1024" height="170.67"/>
+    </g>
+    <rect class="cls-8" y="682.67" width="853.33" height="341.33"/>
+    <rect class="cls-9" y="512" width="682.67" height="512"/>
+    <rect class="cls-10" y="341.33" width="512" height="682.67"/>
+    <rect class="cls-11" y="170.67" width="341.33" height="853.33"/>
+    <rect class="cls-12" width="170.67" height="1024"/>
+  </g>
+  <g id="whiteline">
+    <polyline class="cls-13" points="85 255 426 429 427 768 598 598 85 597 256 939 598 767 768 939 915 125 427 244 680 325"/>
+  </g>
+  <g id="circles">
+    <circle class="cls-14" cx="256" cy="939" r="39.75"/>
+    <circle class="cls-15" cx="426" cy="429" r="39.75"/>
+    <circle class="cls-16" cx="427" cy="768" r="39.75"/>
+    <circle class="cls-7" cx="598" cy="598" r="39.75"/>
+    <circle class="cls-5" cx="85" cy="255" r="39.75"/>
+    <circle class="cls-17" cx="85" cy="597" r="39.75"/>
+    <circle class="cls-5" cx="598" cy="767" r="39.75"/>
+    <circle class="cls-18" cx="768" cy="940" r="39.75"/>
+  </g>
+</svg>

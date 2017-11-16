@@ -1,0 +1,46 @@
+
+<div #textcontainer fxFlex="100" id="textcontainer" class="container" [class.taller]="options.direction != 'row'" [ngx-scroll-to]="'#textcontainer'" [ngx-scroll-to-duration]="2000">
+	<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" fxLayoutAlign="space-around center">
+		<div fxFlex="30" class="textbox">					
+			<h3 class="title" id="title1"></h3>
+			<p class="subtext">problem solver</p>
+			<p class="subtext">custom dashboards</p>
+			<p class="subtext">attribution modeling</p>
+			<p class="subtext">python data</p>
+			<p class="subtext">insights</p>
+			<p class="subtext">causality</p>
+			<p class="subtext">predictions</p>
+			<p class="subtext">machine learning</p>
+			<p class="subtext">advanced tag management</p>
+			<p class="subtext">automated python analysis</p>				
+		</div>
+		<div fxFlex="30" id="text2" class="textbox" [class.two_h]="options.direction == 'row'"
+		   [class.two_w]="options.direction != 'row'">
+		   <h3 class="title" id="title2"></h3>
+		   <p class="subtext">full stack</p>
+		   <p class="subtext">data architecture</p>
+		   <p class="subtext">ETL</p>
+		   <p class="subtext">modern webapps</p>
+		   <p class="subtext">REST APIs</p>
+		   <p class="subtext">containerized modularity</p>
+		   <p class="subtext">linux/unix</p>
+		   <p class="subtext">git</p>
+		   <p class="subtext">agile</p>
+		   <p class="subtext">devops</p>
+		   <!-- <p class="longtext">This is a longer set of text I am using to test the 3 column layout of the text boxes using flex-layout.</p> -->
+		</div>
+		<div fxFlex="30" class="textbox">
+			<h3 class="title" id="title3"></h3>
+			<p class="subtext">innovative thinking</p>
+			<p class="subtext">media design</p>
+			<p class="subtext">marketing strategy</p>
+			<p class="subtext">data visualization</p>
+			<p class="subtext">UI</p>
+			<p class="subtext">UX</p>
+			<p class="subtext">technology</p>
+			<p class="subtext">photography</p>
+			<p class="subtext">music</p>
+			<p class="subtext">art</p>
+		</div>
+	</div>
+</div>
