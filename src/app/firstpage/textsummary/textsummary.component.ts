@@ -35,7 +35,7 @@ export class TextsummaryComponent implements OnInit {
   ngOnInit() {
 
 
-		this.textcontroller = new ScrollMagic.Controller();
+		this.textcontroller = new ScrollMagic.Controller();  
 
 		// let timeline = new TimelineLite();
   //   timeline.to("#textcontainer p", 2, {scale: 2})	

@@ -2,7 +2,6 @@ import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
 import { TimelineMax, TimelineLite, TweenMax, Ease } from 'gsap';
 // import DrawSVGPlugin from '/assets//js/DrawSVGPlugin.js'
 // import CSSPlugin from "gsap/CSSPlugin";
-
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry} from '@angular/material';
 
@@ -12,6 +11,7 @@ import {MatIconRegistry} from '@angular/material';
   templateUrl: './heroheadline.component.html',
   styleUrls: ['./heroheadline.component.css']
 })
+
 export class HeroheadlineComponent implements OnInit {
 	constructor(
   		iconRegistry: MatIconRegistry, sanitizer: DomSanitizer
@@ -20,11 +20,8 @@ export class HeroheadlineComponent implements OnInit {
         sanitizer.bypassSecurityTrustResourceUrl("https://fonts.googleapis.com/icon?family=Material+Icons"));
   	}
 	ngOnInit() {
-		// console.log('headline init!');
 	}
  	ngAfterViewInit(){
- 		// console.log('headline view init!');
-
  		var master = new TimelineLite();
 		master.timeScale(1.4);
 		master.add(mainLine(), "mt1")
@@ -34,6 +31,7 @@ export class HeroheadlineComponent implements OnInit {
 			.add(headline(), "headline-=2")
 			.add(filter(), "filter-=10")
 			.add(button(), "button-=9");
+
 
 	    function mainLine(): TimelineLite {
 	    	var tl = new TimelineLite();			
@@ -85,8 +83,6 @@ export class HeroheadlineComponent implements OnInit {
 	    	tl.to(btn, 5, {opacity: 1})
 	    	return tl;
 	    }
-
-  }
-
+  	}
 }
 
