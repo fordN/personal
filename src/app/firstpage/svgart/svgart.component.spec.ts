@@ -5,6 +5,9 @@ import { MatCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SvganimatetoComponent } from './svganimateto/svganimateto.component';
 
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+
 describe('SvgartComponent', () => {
   let component: SvgartComponent;
   let fixture: ComponentFixture<SvgartComponent>;
@@ -17,8 +20,10 @@ describe('SvgartComponent', () => {
       ],
       imports: [
         MatCardModule, 
-        FlexLayoutModule
-      ]
+        FlexLayoutModule,
+        ScrollToModule
+      ],
+      providers: [ ScrollToService ]
     })
     .compileComponents();
   }));
@@ -35,7 +40,7 @@ describe('SvgartComponent', () => {
 
   it('should render title in a h3 tag', async(() => {    
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h3').textContent).toContain('SVG ART');
+    expect(compiled.querySelector('h3').textContent).toContain('SVG SKETCHES');
   }));
 
   it('should have multiple .svgcontainer elements', async(() => {    

@@ -5,6 +5,9 @@ import { TimelineMax, TimelineLite, TweenMax, Ease } from 'gsap';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry} from '@angular/material';
 
+import { MatDialogModule, MatDialog, MatDialogRef, MatDialogConfig, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { EmaildialogComponent } from '../emaildialog/emaildialog.component';
+
 
 @Component({
   selector: 'app-heroheadline',
@@ -14,7 +17,9 @@ import {MatIconRegistry} from '@angular/material';
 
 export class HeroheadlineComponent implements OnInit {
 	constructor(
-  		iconRegistry: MatIconRegistry, sanitizer: DomSanitizer
+		public dialog: MatDialog,
+  		iconRegistry: MatIconRegistry, 
+  		sanitizer: DomSanitizer
   	) { 
   		iconRegistry.addSvgIconSet(
         sanitizer.bypassSecurityTrustResourceUrl("https://fonts.googleapis.com/icon?family=Material+Icons"));
@@ -28,11 +33,30 @@ export class HeroheadlineComponent implements OnInit {
         	'linkedin',
         	sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/linkedin-logo.svg'));
   	}
+
+  	openEmailDialog(): void {
+		this.dialog.open(EmaildialogComponent, {
+		  data: {
+		  },
+		  hasBackdrop: true,
+		  backdropClass: 'modal-backdrop'
+		});
+		this.trackOutBoundLink('myemail');
+	};
+
+	trackOutBoundLink(url: string): void {
+		gtag('event', 'outbound', {
+		  'event_category': 'clicklink',
+		  'event_label': url
+		});
+	}
+
 	ngOnInit() {
 	}
  	ngAfterViewInit(){
  		var master = new TimelineLite();
-		master.timeScale(1.4);
+		// master.timeScale(1.4);
+		master.timeScale(20);
 		master.add(mainLine(), "mt1")
 			.add(secondaryLines(), "mt2-=2.5")
 			.add(thirdLines(), "mt3-=2")

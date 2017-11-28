@@ -32,9 +32,13 @@ svg {
     text-align: center;
     opacity: 0;
 }
+/*:host /deep/ .mat-icon:hover {
+	color: #f08080;
+}*/
 
 a {
 	height: 100%;
+	cursor: pointer; 
 }
 
 .floatbutton {

@@ -3,6 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { TextsummaryComponent } from './textsummary.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ScrollToService } from '@nicky-lenaers/ngx-scroll-to';
+
 describe('TextsummaryComponent', () => {
   let component: TextsummaryComponent;
   let fixture: ComponentFixture<TextsummaryComponent>;
@@ -12,7 +15,8 @@ describe('TextsummaryComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ TextsummaryComponent ],
-      imports: [ FlexLayoutModule ]
+      imports: [ FlexLayoutModule, ScrollToModule],
+      providers: [ScrollToService]
     })
     .compileComponents();
   }));

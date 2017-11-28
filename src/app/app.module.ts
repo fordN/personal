@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
@@ -22,6 +23,7 @@ import { SvgartComponent } from './firstpage/svgart/svgart.component';
 import { SvganimatetoComponent } from './firstpage/svgart/svganimateto/svganimateto.component';
 import { FooterComponent } from './firstpage/footer/footer.component';
 import { DatavizComponent } from './firstpage/dataviz/dataviz.component';
+import { EmaildialogComponent } from './firstpage/emaildialog/emaildialog.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { DatavizComponent } from './firstpage/dataviz/dataviz.component';
     SvgartComponent,
     SvganimatetoComponent,
     DatavizComponent,
-    FooterComponent
+    FooterComponent,
+    EmaildialogComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,11 @@ import { DatavizComponent } from './firstpage/dataviz/dataviz.component';
     MatIconModule,
     MatCardModule,
     MatToolbarModule,
+    MatDialogModule,
     ScrollToModule.forRoot() 
+  ],
+  entryComponents: [
+  	EmaildialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
