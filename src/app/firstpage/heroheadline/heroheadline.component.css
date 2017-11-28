@@ -2,6 +2,7 @@
 	position: relative;
 	width: 100%;
 	height: auto;
+	background-color: #000000;
 }
 
 svg {
@@ -11,6 +12,29 @@ svg {
 	top: 0px;
 	z-index: 2;
 	/*position: absolute;*/
+}
+
+.toplinkscontainer {
+	position:absolute;
+	top: 1%;
+	width: 100%;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 0px;
+	max-height: 45vh;
+	height: auto;
+}
+
+.toplinks {
+	position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+}
+
+a {
+	height: 100%;
 }
 
 .floatbutton {

@@ -5,9 +5,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
@@ -42,6 +44,7 @@ import { DatavizComponent } from './firstpage/dataviz/dataviz.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    MatToolbarModule,
     ScrollToModule.forRoot() 
   ],
   providers: [],

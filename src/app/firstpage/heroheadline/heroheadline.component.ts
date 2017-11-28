@@ -18,6 +18,15 @@ export class HeroheadlineComponent implements OnInit {
   	) { 
   		iconRegistry.addSvgIconSet(
         sanitizer.bypassSecurityTrustResourceUrl("https://fonts.googleapis.com/icon?family=Material+Icons"));
+        iconRegistry.addSvgIcon(
+        	'github',
+        	sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/github-logo.svg'));
+        iconRegistry.addSvgIcon(
+        	'instagram',
+        	sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/instagram-logo.svg'));
+        iconRegistry.addSvgIcon(
+        	'linkedin',
+        	sanitizer.bypassSecurityTrustResourceUrl('assets/svg/icons/linkedin-logo.svg'));
   	}
 	ngOnInit() {
 	}
@@ -30,7 +39,8 @@ export class HeroheadlineComponent implements OnInit {
 			.add(fourthLines(), "mt4-=3")
 			.add(headline(), "headline-=2")
 			.add(filter(), "filter-=10")
-			.add(button(), "button-=9");
+			.add(button(), "button-=9")
+			.add(toplinks(), "toplinks-=6");
 
 
 	    function mainLine(): TimelineLite {
@@ -81,6 +91,12 @@ export class HeroheadlineComponent implements OnInit {
 	    	let tl = new TimelineLite
 	    	let btn: Element = document.querySelector('.floatbutton')
 	    	tl.to(btn, 5, {opacity: 1})
+	    	return tl;
+	    }
+	    function toplinks(): TimelineLite {
+	    	let tl = new TimelineLite
+	    	let links: HTMLElement[] = [].slice.call(document.querySelectorAll('.toplinks'))
+	    	tl.staggerTo(links, 5, {opacity: 1}, .75)
 	    	return tl;
 	    }
   	}
