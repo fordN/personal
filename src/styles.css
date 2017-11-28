@@ -11,3 +11,20 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("/assets/fonts/SIMPLIFICA_Typeface.ttf") format("ttf")
+}
+
+html, body { /* this allows the children to inherit this style */
+   font-family: 'Simplifica';	
+}
+
+h3 {	
+	font-size: 1.6em;
+}
+p {
+	font-size: 1.4em; 
+}

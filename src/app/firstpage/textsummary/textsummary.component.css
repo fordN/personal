@@ -7,8 +7,15 @@
 	min-height: 300px;
 }
 
+h3 {
+	font-family: 'Simplifica';
+}
+
 p {
 	color: white;
+	font-family: 'Simplifica';
+	letter-spacing: .04em;
+    font-size: 1.4em;
 }
 
 .textbox { 
