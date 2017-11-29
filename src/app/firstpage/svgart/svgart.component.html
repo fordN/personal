@@ -2,8 +2,8 @@
 	<div class=title fxFlex = "100" fxLayout="row" fxLayoutAlign="center start">
 		<h3>SVG SKETCHES</h3>
 	</div>
-	<div id="svggrid" fxFlex="1" class="tilerow" fxLayout="row" fxLayoutWrap="wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between center" fxLayoutGap="2%">
-		<div fxFlex="23" fxFlex.lt-md="28" class="svgcontainer" *ngFor="let art of fullfilenames">
+	<div id="svggrid" fxFlex="1" class="tilerow" fxLayout="row" fxLayoutWrap="wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between stretch" fxLayoutGap="2%">
+		<div fxFlex="28" fxFlex.lt-md="28" class="svgcontainer" *ngFor="let art of fullfilenames">
 			<mat-card *ngIf="art.name" class="card mat-elevation-z8">
 				<!-- <mat-card-header>
 					<mat-card-title>{{art.textdate}}</mat-card-title>					

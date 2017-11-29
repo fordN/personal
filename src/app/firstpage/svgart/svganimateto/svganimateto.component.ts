@@ -87,7 +87,7 @@ export class SvganimatetoComponent implements OnInit {
 			// console.log(embedElement);
 			let svgDoc: Document = embedElement.getSVGDocument()
 			// console.log(svgDoc)
-			let svgGroups: SVGGElement[] = [].slice.call(svgDoc.querySelectorAll('g[id]'))
+			let svgGroups: SVGGElement[] = [].slice.call(svgDoc.querySelectorAll('g[id]:not(#background)'))
 			// console.log(svgGroups);
 
 			var animateEls: HTMLElement[] = []

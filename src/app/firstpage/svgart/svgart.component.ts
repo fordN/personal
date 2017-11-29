@@ -23,7 +23,9 @@ export class SvgartComponent implements OnInit {
 			{id:1, name: "assets/svg/101317.svg", iterations: 0, animateTo: 'rotate', textdate: 'October 13', prompt: 'bar chart inspired' },
 			{id:2, name: "assets/svg/101617.svg", iterations: 0, animateTo: 'rotateAroundCenter', textdate: 'October 16', prompt: 'center out animation' },
 			{id:3, name: "assets/svg/101717.svg", iterations: 0, animateTo: 'assets/svg/101717_animateTo.svg', textdate: 'October 17', prompt: 'balance' },
-			{id:4, name: "assets/svg/101817.svg", iterations: 0, animateTo: 'rotate', textdate: 'October 18', prompt: '(10 lines, 1 shape) > chaos' }
+			{id:4, name: "assets/svg/101817.svg", iterations: 0, animateTo: 'rotate', textdate: 'October 18', prompt: '(10 lines, 1 shape) > chaos' },
+			{id:5, name: "assets/svg/102417.svg", iterations: 0, animateTo: 'rotate', textdate: 'October 24', prompt: 'hex' },
+			{id:6, name: "assets/svg/112817.svg", iterations: 0, animateTo: 'rotate', textdate: 'November 28', prompt: 'space lines' }
 		]
 	}
 

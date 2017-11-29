@@ -13,13 +13,9 @@
 	color: #000000;
 }
 .tilerow {
-	/*position: absolute;
-	bottom: 0;
-	left: 0;*/
 	padding-left: 48px;
 	padding-right: 48px;
 	padding-bottom: 0px;
-	max-height: 80vh;
 	height: auto;
 	width: 100%;
 }
