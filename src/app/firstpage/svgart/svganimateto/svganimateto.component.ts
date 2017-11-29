@@ -62,7 +62,18 @@ export class SvganimatetoComponent implements OnInit {
 				});	
 				this.tween=tl;
 				this.tween.play();
-			}else{
+			}
+			else if(item.animateTo=='draw'){
+				let initQuery: string = this.createId(item.id, 'init')
+				let initEls: HTMLElement[] = getPaths(initQuery);
+				let tl = new TimelineLite({paused:true});	
+				initEls.forEach((element, i) => {
+					tl.fromTo(element, 0.08, {drawSVG: "100%"}, {drawSVG: "0%"})
+				});	
+				this.tween=tl;
+				this.tween.play();
+			}
+			else{
 				let initQuery: string = this.createId(item.id, 'init')
 				let initEls: HTMLElement[] = getPaths(initQuery);
 				console.log('initEls: ', initEls);
