@@ -1,0 +1,26 @@
+/*.toplinkscontainer {
+	position:absolute;
+	top: 1%;
+	width: 100%;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 0px;
+	max-height: 45vh;
+	height: auto;
+}*/
+
+.links {
+	position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+}
+/*:host /deep/ .mat-icon:hover {
+	color: #f08080;
+}*/
+
+a {
+	height: 100%;
+	cursor: pointer; 
+}

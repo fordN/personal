@@ -23,8 +23,9 @@ import { SvgartComponent } from './firstpage/svgart/svgart.component';
 import { SvganimatetoComponent } from './firstpage/svgart/svganimateto/svganimateto.component';
 import { FooterComponent } from './firstpage/footer/footer.component';
 import { DatavizComponent } from './firstpage/dataviz/dataviz.component';
-import { EmaildialogComponent } from './firstpage/emaildialog/emaildialog.component';
+import { EmaildialogComponent } from './iconrow/emaildialog/emaildialog.component';
 import { MyworkComponent } from './firstpage/mywork/mywork.component';
+import { IconrowComponent } from './iconrow/iconrow.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { MyworkComponent } from './firstpage/mywork/mywork.component';
     DatavizComponent,
     FooterComponent,
     EmaildialogComponent,
-    MyworkComponent
+    MyworkComponent,
+    IconrowComponent
   ],
   imports: [
     BrowserModule,

@@ -12,22 +12,28 @@
 	height: auto;
 	color: #000000;
 }
-.tilerow {
+
+/*.tilerow {
 	padding-left: 48px;
 	padding-right: 48px;
 	padding-bottom: 0px;
 	height: auto;
 	width: 100%;
+}*/
+
+.tilerow {
+	padding-left: 48px;
+	padding-right: 48px;
 }
 .svgcontainer {
 	height: auto;
 	width: 100%;
-	min-height: 40%;
 	margin-bottom:3%	
 }
 
 .card{
 	padding:12px;
+	margin: 5%;
 	background-color: #000000;
 	opacity: .62;
 	color: #ffffff;
