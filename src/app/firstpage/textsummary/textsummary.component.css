@@ -9,13 +9,14 @@
 
 h3 {
 	font-family: 'Simplifica';
+	letter-spacing: 0.04em;
 }
 
 p {
 	color: white;
 	font-family: 'Simplifica';
-	letter-spacing: .04em;
-    font-size: 1.4em;
+	letter-spacing: 0.04em;
+    font-size: 1.2em;
 }
 
 .textbox { 

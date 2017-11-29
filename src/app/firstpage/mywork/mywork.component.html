@@ -1,0 +1,46 @@
+<div id="workcontainer" class="container" fxLayout="column" fxLayoutAlign="center center" [ngx-scroll-to]="'#workcontainer'" [ngx-scroll-to-duration]="2000">
+<!-- <div flexLayout="column" flexLayout.xs="column" id="container"> -->
+	<div fxAlign="center" fxLayout="column" fxLayoutAlign="center center" id="worktitle" class="sectiontitle">
+		<h3>PAST WORK</h3>
+	</div>
+
+	<div class="paragraph" fxFlex="80">
+		<p>
+			Over the years I have worked to maintain a well rounded skill set to that I apply towards creating aesthetic solutions to all types of problems.   Studying at Tufts University I did not follow a typical path of a Mechanical Engineering student, finding challenging and interesting ways to satisfy my curiosity from interesting applications of higher order math such as mathematical neuroscience, robotics, and systems design optimization to a uniquely artistic product design coursework including foundation for design, graphic design, drawing, and of course mechanical product design.   Since university I have continued to feed my thirst for learning; inspired by the possibilities and excited to meld my love of design and technology I dove deeper into the worlds of statistics, software design, and data visualization. I’ve gathered a selection of projects to show a few of the places I’ve gone so far on this journey.   
+		</p>
+	</div>
+
+	<div id="workgrid" fxFlex="1" class="tilerow" fxLayout="row" fxLayoutWrap="wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around start" fxLayoutGap="2%">
+		<div fxFlex="40%" class="worktile">
+			<mat-card class="card mat-elevation-z8">
+				<mat-card-header>
+					<mat-card-title>THE GOODS V1</mat-card-title>
+					<mat-card-subtitle>media and creative asset tracking and reporting system</mat-card-subtitle>					
+				</mat-card-header>
+				<img class="workimg" src="assets/images/v1_dashboard.jpg" layout-fill>
+				<mat-card-content>
+					<p>
+						Data collection system that filtered the data of multiple departments, and transformed it into beautiful reports for clients and internal users. Utility interfaces were also created to track and manage creative assets and tracking tags. Dashboards were generated using responsive principles so that the analytics package could be viewed on devices of all sizes.  The ETL systems automatically processed cleaner data in order to provide reliable, frequent reports.  Bottom line: we turned our data into a valuable product that looked great on any screen.
+
+						After helping build and maintian the ETL system which ran primarily using the Pentaho suite I was in charge of using d3, an open source javascript visualization tool, to build and maintain the interactive dashboards. 
+					</p>
+				</mat-card-content>					
+			</mat-card>
+		</div>
+		<div fxFlex="40%" class="worktile">
+			<mat-card class="card mat-elevation-z8">
+				<mat-card-header>
+					<mat-card-title>DIRECTIONAL CAUSALITY ANALYSIS</mat-card-title>	
+					<mat-card-subtitle>transportation client</mat-card-subtitle>	
+				</mat-card-header>
+				<img class="workimg" src="assets/images/d3_directedCausal.png" layout-fill>
+				<mat-card-content>
+					<p>
+						We created a superset of data by gathering external trends for past year. Gathered data included: gas prices, transportaion index, airline prices, and google search trends. I analyzed the data to find statistically significant cause and effect relationships and built a network graph showing this directional causality.  The relational map confirmed several teammebers longheld assumptions, provided avenues for testing new ideas, and created a top down view that could be used moving forward for understanding and communication around their business.
+					</p>
+				</mat-card-content>					
+			</mat-card>
+		</div>
+	</div>
+
+</div>

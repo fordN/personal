@@ -19,7 +19,7 @@
 	padding-left: 48px;
 	padding-right: 48px;
 	padding-bottom: 0px;
-	max-height: 45vh;
+	max-height: 80vh;
 	height: auto;
 	width: 100%;
 }
@@ -36,4 +36,14 @@
 	opacity: .62;
 	color: #ffffff;
 	margin-bottom: 5%;
+}
+.mat-card-title {
+	font-family: "Simplifica";
+	font-size: 1.5em;
+	color: white;	
+}
+.mat-card-subtitle {
+	font-family: "Simplifica";
+	font-size: 1.2em;
+	color: rgba(0,0,0,.54);
 }

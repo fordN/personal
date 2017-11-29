@@ -7,11 +7,8 @@ body {
 }
 
 .site {
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
 }
-
 
 @font-face {
   font-family: "Simplifica";
@@ -24,7 +21,9 @@ html, body { /* this allows the children to inherit this style */
 
 h3 {	
 	font-size: 1.6em;
+	letter-spacing: 0.04em;
 }
 p {
-	font-size: 1.4em; 
+	font-size: 1.2em; 
+	letter-spacing: 0.04em;
 }

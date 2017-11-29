@@ -24,6 +24,7 @@ import { SvganimatetoComponent } from './firstpage/svgart/svganimateto/svganimat
 import { FooterComponent } from './firstpage/footer/footer.component';
 import { DatavizComponent } from './firstpage/dataviz/dataviz.component';
 import { EmaildialogComponent } from './firstpage/emaildialog/emaildialog.component';
+import { MyworkComponent } from './firstpage/mywork/mywork.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { EmaildialogComponent } from './firstpage/emaildialog/emaildialog.compon
     SvganimatetoComponent,
     DatavizComponent,
     FooterComponent,
-    EmaildialogComponent
+    EmaildialogComponent,
+    MyworkComponent
   ],
   imports: [
     BrowserModule,

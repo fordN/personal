@@ -55,8 +55,8 @@ export class HeroheadlineComponent implements OnInit {
 	}
  	ngAfterViewInit(){
  		var master = new TimelineLite();
-		// master.timeScale(1.4);
-		master.timeScale(20);
+		master.timeScale(1.4);
+		// master.timeScale(20);
 		master.add(mainLine(), "mt1")
 			.add(secondaryLines(), "mt2-=2.5")
 			.add(thirdLines(), "mt3-=2")

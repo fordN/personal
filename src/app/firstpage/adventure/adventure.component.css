@@ -26,3 +26,20 @@ img {
 /*	margin:5px;*/
 	/*background-color: pink;*/
 }
+
+.paragraph {
+	padding-left: 48px;
+	padding-right: 48px;
+}
+
+h3 {
+    -webkit-margin-after: 0em;
+}
+
+p {
+	letter-spacing: .04em;
+}
+
+
+
+
